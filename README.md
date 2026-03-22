@@ -2,53 +2,38 @@
 
 
 
-\## Overview
-
-
+## Overview
 
 In this project I used Terraform to provision a complete AWS networking environment from scratch.
 
-
-
 The goal was to understand how public and private subnets work in AWS, how internet access is controlled through route tables, and how private resources can safely access the internet using a NAT Gateway.
-
-
 
 All infrastructure was created, tested, and destroyed using Terraform.
 
 
-
-\---
-
-
-
-\## Architecture
-
-
+## Architecture
 
 The infrastructure created in this project includes:
 
+- A custom VPC
 
+- One public subnet
 
-\- A custom VPC
+- One private subnet
 
-\- One public subnet
+- An Internet Gateway
 
-\- One private subnet
+- Public and private route tables
 
-\- An Internet Gateway
+- Route table associations
 
-\- Public and private route tables
+- A security group allowing SSH access
 
-\- Route table associations
+- An EC2 instance deployed in the public subnet
 
-\- A security group allowing SSH access
+- An Elastic IP
 
-\- An EC2 instance deployed in the public subnet
-
-\- An Elastic IP
-
-\- A NAT Gateway for private subnet outbound internet access
+- A NAT Gateway for private subnet outbound internet access
 
 
 
@@ -111,12 +96,9 @@ How NAT Gateways allow private subnet instances to reach the internet securely
 How security groups control inbound access to EC2 instances
 
 
+--
 
-\---
-
-
-
-\## Terraform Resources Used
+## Terraform Resources Used
 
 
 
@@ -159,12 +141,10 @@ aws\_eip
 aws\_nat\_gateway
 
 
-
-\---
-
+---
 
 
-\## Terraform Workflow
+## Terraform Workflow
 
 
 
@@ -187,12 +167,9 @@ terraform destroy
 This ensured the configuration was formatted correctly, validated, previewed before deployment, and fully removed after testing.
 
 
+---
 
-\---
-
-
-
-\## Why I Built This
+## Why I Built This
 
 
 
@@ -203,12 +180,10 @@ As someone transitioning from IT support into cloud engineering, I wanted to mov
 This project helped me understand how AWS networking components interact and how Terraform can be used to provision and manage that infrastructure in a repeatable way.
 
 
-
-\---
-
+---
 
 
-\## Future Improvements
+## Future Improvements
 
 
 
