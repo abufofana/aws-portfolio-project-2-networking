@@ -60,13 +60,11 @@ NAT Gateway
 Private Subnet  
 
 
-
-\---
-
+--
 
 
-\## Key Concepts Demonstrated
 
+## Key Concepts Demonstrated
 
 
 This project demonstrates several core AWS networking concepts:
