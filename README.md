@@ -60,10 +60,6 @@ NAT Gateway
 Private Subnet  
 
 
---
-
-
-
 ## Key Concepts Demonstrated
 
 
@@ -94,7 +90,6 @@ How NAT Gateways allow private subnet instances to reach the internet securely
 How security groups control inbound access to EC2 instances
 
 
---
 
 ## Terraform Resources Used
 
@@ -139,8 +134,6 @@ aws\_eip
 aws\_nat\_gateway
 
 
----
-
 
 ## Terraform Workflow
 
@@ -165,7 +158,6 @@ terraform destroy
 This ensured the configuration was formatted correctly, validated, previewed before deployment, and fully removed after testing.
 
 
----
 
 ## Why I Built This
 
@@ -178,7 +170,6 @@ As someone transitioning from IT support into cloud engineering, I wanted to mov
 This project helped me understand how AWS networking components interact and how Terraform can be used to provision and manage that infrastructure in a repeatable way.
 
 
----
 
 
 ## Future Improvements
